@@ -4,6 +4,7 @@
 
 #include "cube_demo.h"
 #include "tesselation_demo.h"
+#include "snow_demo.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -65,6 +66,10 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
 	else if((key == GLFW_KEY_F1) && action == GLFW_PRESS){
 		active_demo = 1;
 		print_cube_demo_help();
+	}
+	else if((key == GLFW_KEY_F2) && action == GLFW_PRESS){
+		active_demo = 2;
+		print_snow_demo_help();
 	}
 	else if((key == GLFW_KEY_F4) && action == GLFW_PRESS){
 		active_demo = 4;

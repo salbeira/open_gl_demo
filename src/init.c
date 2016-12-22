@@ -4,6 +4,7 @@
 
 #include "cube_demo.h"
 #include "tesselation_demo.h"
+#include "snow_demo.h"
 
 void init()
 {
@@ -13,4 +14,6 @@ void init()
 	init_cube_data();
 	init_tesselation_program();
 	init_icosahedron_data();
+	init_snow_program();
+	init_points_data();
 }

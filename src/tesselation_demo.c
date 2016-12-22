@@ -261,7 +261,6 @@ void print_tesselation_demo_help()
 	printf("[HELP] Use the buttons A and D or LEFT and RIGHT to move the camera around the object horizontally.\n");
 	printf("[HELP] Use the buttons W and S or UP and DOWN to zoom in and out from the object.\n");
 	printf("[HELP] Use the buttons Q and E to move the camera around the object vertically.\n");
-	printf("[HELP] Tilt the camera height with Q and E.\n");
 	printf("[HELP] To move the camera, you can also use the UP, DOWN, LEFT and RIGHT button on your keyboard.\n");
 	printf("[HELP] Use the I and O button to change the inner and outer tesselation level used in the shader.\n");
 }

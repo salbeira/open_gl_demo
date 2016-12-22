@@ -7,6 +7,7 @@
 
 #include "cube_demo.h"
 #include "tesselation_demo.h"
+#include "snow_demo.h"
 
 unsigned char polygon_mode = 0;
 unsigned int active_demo = 1;
@@ -21,6 +22,9 @@ void render()
 	{
 		case 1:
 			render_cube_demo();
+			break;
+		case 2:
+			render_snow_demo();
 			break;
 		case 4:
 			render_tesselation_demo();
