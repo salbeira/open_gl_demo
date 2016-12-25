@@ -171,6 +171,8 @@ void init_points_data()
 	
 	snow_texture = create_texture(texture_width, texture_height, texture_data);
 
+	glGenerateMipmap(GL_TEXTURE_2D);
+
 	printf("[INFO] Snow Demo objects prepared\n");
 }
 
@@ -178,7 +180,7 @@ void render_snow_demo()
 {
 	glUseProgram(snow_program);
 	glBindVertexArray(points_vertex_array);
-	glBindTexture(snow_texture);
+	glBindTexture(GL_TEXTURE_2D, snow_texture);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, points_index_buffer);
 
 	glDrawElements(GL_POINTS, SNOW_AMOUNT, GL_UNSIGNED_BYTE, 0);
