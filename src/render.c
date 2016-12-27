@@ -14,10 +14,13 @@ unsigned int active_demo = 1;
 
 void render()
 {
+	/* Clear the primary framebuffer */
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+	/* Set the rendering to "wireframe" or "filled" mode */
 	glPolygonMode(GL_FRONT_AND_BACK, polygon_mode ? GL_LINE : GL_FILL);
 
+	/* Render the active demo */
 	switch(active_demo)
 	{
 		case 1:

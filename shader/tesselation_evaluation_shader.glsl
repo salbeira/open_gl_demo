@@ -7,6 +7,11 @@ layout(std140) uniform Matrices {
 layout(triangles, equal_spacing, cw) in;
 layout(location = 0) in vec3 tcsPosition[];
 layout(location = 0) out vec3 tesPosition;
+
+/* 
+ * Move the tesselated vertices to their "default" position.
+ * Also moves the vertex out onto the unit sphere.
+ */
 void main(){
 	vec3 p0 = gl_TessCoord.x * tcsPosition[0];
 	vec3 p1 = gl_TessCoord.y * tcsPosition[1];

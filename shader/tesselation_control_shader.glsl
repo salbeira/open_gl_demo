@@ -9,6 +9,10 @@ layout(location = 0) out vec3 tcsPosition[];
 
 #define ID gl_InvocationID
 
+/* 
+ *Set the tesselation levels for outer and inner tesselation.
+ * These actually just need to be set once and therefore can be ignored every invocation thereafter
+ */
 void main(){
 	tcsPosition[ID] = vsPosition[ID];
 	if(ID == 0) {

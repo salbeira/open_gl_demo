@@ -12,10 +12,12 @@ layout(location = 0) in vec3 tesPosition[3];
 layout(location = 0) out vec3 normal;
 layout(location = 1) out vec3 lightPos;
 
+/* Calculates a normal for the lighting. */
 void main(){
 	vec3 a = tesPosition[2] - tesPosition[0];
 	vec3 b = tesPosition[1] - tesPosition[0];
 	mat4 mat_cm = camera * model;
+	/* DO NOT DO THIS AT HOME! - Calculate the normal-matrix before invoking the shader and pass it as a uniform */
 	mat4 normal_mat = transpose(inverse(mat_cm));
 	vec3 c = normalize(cross(a,b));
 	vec4 d = vec4(c,1.0);

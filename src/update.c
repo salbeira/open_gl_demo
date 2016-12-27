@@ -5,6 +5,7 @@
 #include "tesselation_demo.h"
 #include "snow_demo.h"
 
+/* Update the active demo */
 void update(double delta)
 {
 	switch(active_demo)

@@ -3,6 +3,7 @@
 
 #include "globals.h"
 
+/* Function called to start the initialization process */
 void init();
 
 #endif

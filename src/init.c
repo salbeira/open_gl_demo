@@ -6,6 +6,7 @@
 #include "tesselation_demo.h"
 #include "snow_demo.h"
 
+/* Calls other initialization functions */
 void init()
 {
 	init_window();
